@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Header, Main, Title, Heading } from '../components'
-import { project1, project2, project3 } from '../../assets';
+import { project, project1, project2, project3 } from '../../assets';
 
 export function Portfolio() {
   let lang = localStorage.getItem('lang') || 'EN';
@@ -14,6 +14,40 @@ export function Portfolio() {
         <Title>
           { lang === 'EN' ? 'More projects can be viewed on ' : 'Больше проектов можно посмотреть на ' }<GitHub href="https://github.com/Druzhkova">github</GitHub>
         </Title>
+
+        <Card>
+          <ContainerImage href="https://druzhkova.github.io/MoviesApp/">
+            <Img src={project} />
+            <Background />
+          </ContainerImage>
+          <Details>
+            <CardTitle>
+              { lang === 'EN' ? 'Movies App' : 'Поиск фильмов' }
+            </CardTitle>
+            <CardSubTitle>
+            { lang === 'EN' ? 'Used' : 'Использовались' }: react, react-router, redux, styled-components, middleware
+            </CardSubTitle>
+            <Description>
+              { lang === 'EN'
+               ? 'The project was created during training on the course from TeachMeSkills.'
+               : 'Проект создан во время обучения на курсе от TeachMeSkills.' }
+              <p>{ lang === 'EN'
+               ? 'The user can search films by title and genre, sort by release date and rating. There is a carousel in the header of the application where the top films are displayed sorted by date.'
+               : 'Пользователь может искать фильмы по названию и жанру, сортировать по дате выхода и рейтингу. В шапке приложения присутствует карусель где отображается топ фильмов отсортированных по дате.' }</p>
+                <p>{ lang === 'EN'
+               ? 'When user clicks on a movie, show a modal component with full movie description and the user navigates to: localhost/film/id.'
+               : 'Когда пользователь нажимает на фильм, показывается модальное окно с полным описанием фильма и пользователь переходит на: localhost/film/id.' }</p>
+              <p>{ lang === 'EN'
+               ? 'There is a movie search results counter.'
+               : 'Присуствует счетчик результатов поиска фильмов.' }</p>
+              <p></p> 
+            </Description>
+            <LinkToGithub>
+              <Link href="https://github.com/Druzhkova/MoviesApp">{ lang === 'EN' ? 'View code' : 'Посмотреть код' } →</Link>
+            </LinkToGithub>
+          </Details>
+        </Card>
+
         <Card>
           <ContainerImage href="https://druzhkova.github.io/Match-match-game/">
             <Img src={project1}/>

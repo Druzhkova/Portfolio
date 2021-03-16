@@ -45,7 +45,7 @@ export function Home() {
             <a href="https://github.com/Druzhkova">
               <Icon src={gitHub} alt="gitHub"/>
             </a>
-            <a href="https://www.linkedin.com/in/druzhkova-vika/">
+            <a href="https://www.linkedin.com/in/viktoriya-druzhkova/">
               <Icon src={linkedin} alt="linkedin"/>
             </a>
             <a href="https://wa.me/375255427645">
