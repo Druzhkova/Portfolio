@@ -87,6 +87,12 @@ export function Resume() {
                 <li>Drawing up cash statements</li>   
                 <li>Advise customers on financial services</li>
               </ul>
+              <TextSecondary>JS developer</TextSecondary>
+              <span>apr. 2021 — may 2021</span>
+              <p>BGaming</p>
+              <ul>
+                <li>Game development</li>
+              </ul>
             </Block> 
             : 
             <Block>
@@ -106,6 +112,12 @@ export function Resume() {
                 <li>Проведение операций с денежными средствами</li>
                 <li>Составление кассовой отчетности</li>   
                 <li>Консультирование клиентов по финансовым услугам</li>
+              </ul>
+              <TextSecondary>JS developer</TextSecondary>
+              <span>апр. 2021 - май 2021г.</span>
+              <p>BGaming</p>
+              <ul>
+                <li>Разработка игр</li>
               </ul>
             </Block> }
           </InnerBlock>
